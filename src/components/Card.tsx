@@ -6,18 +6,34 @@ interface Props {
   title?: string;
   description?: string;
   absolute?: boolean;
+  worksCard?: boolean;
   className?: string;
 }
 
-const Card = ({ children, title, description, absolute, className }: Props) => {
+const Card = ({
+  children,
+  title,
+  description,
+  absolute,
+  worksCard,
+  className,
+}: Props) => {
   return (
     <div
       className={`flex flex-col custom-bg py-6 px-6 text-white relative ${className} group cursor-pointer`}
     >
       <div className="flex-1">{children}</div>
       <div className={`flex justify-between items-end ${!absolute && "mt-4"}`}>
-        <div className="font-medium space-y-2">
-          <h5 className="text-xs text-primary opacity-45">{description}</h5>
+        <div
+          className={`${worksCard ? "space-y-0" : "space-y-2"} font-medium `}
+        >
+          <h5
+            className={`${
+              worksCard ? "text-sm" : "text-xs"
+            }  text-primary opacity-45`}
+          >
+            {description}
+          </h5>
           <h2 className="text-xl">{title}</h2>
         </div>
         <Link
