@@ -12,6 +12,9 @@ export default {
       borderRadius: {
         "4xl": "30px",
       },
+      boxShadow: {
+        custom: "0 0 20px -10px rgba(0, 0, 0)",
+      },
       textColor: {
         primary: "#bcbcbc",
         accent: "#5b78f6",
