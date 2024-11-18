@@ -1,8 +1,6 @@
-import React from "react";
 import ProfilesCard from "../components/Card/ProfilesCard";
 import LetsWorkCard from "../components/Card/LetsWorkCard";
 import CredentialsCard from "../components/Card/CredentialsCard";
-import Card from "../components/Card";
 
 const About = () => {
   return (
@@ -17,7 +15,7 @@ const About = () => {
         </div>
 
         <div className="flex flex-col gap-2 flex-1">
-          <div className="flex gap-1 items-center">
+          <div className="flex gap-1 items-center justify-center">
             <img
               decoding="async"
               src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png"
