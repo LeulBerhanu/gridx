@@ -2,14 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+  @apply bg-[#0f0f0f];
+}
+
 .icon {
   @apply w-8 h-8;
 }
 
 .icon--bg {
-  @apply p-5 border border-[#343434] rounded-full bg-primary-gradient;
+  @apply p-6 border border-[#343434] shadow-lg rounded-full bg-primary-gradient;
 }
 
+/* .custom-bg {
+  @apply rounded-4xl bg-primary-gradient;
+} */
 .custom-bg {
-  @apply border border-[#343434] rounded-4xl bg-primary-gradient;
+  @apply border border-[#292929]  rounded-4xl bg-primary-gradient;
 }
