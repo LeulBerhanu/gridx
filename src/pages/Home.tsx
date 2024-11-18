@@ -1,10 +1,12 @@
 import Card from "../components/Card";
-import { FiCamera, FiTwitter } from "react-icons/fi";
+import { FiCamera } from "react-icons/fi";
 import { PiPencilCircle } from "react-icons/pi";
 import { IoIosColorFilter } from "react-icons/io";
 import { MdDeveloperMode } from "react-icons/md";
-import { CiBasketball } from "react-icons/ci";
 import { Link } from "react-router-dom";
+import ProfilesCard from "../components/Card/ProfilesCard";
+import CredentialsCard from "../components/Card/CredentialsCard";
+import LetsWorkCard from "../components/Card/LetsWorkCard";
 
 const Home = () => {
   return (
@@ -46,13 +48,7 @@ const Home = () => {
             <p className="text-xs">LATEST WORK AND FEATURED *</p>
           </div>
           <div className="flex-1 flex gap-5 ">
-            <Card title="Credentials" description="MORE ABOUT ME">
-              <img
-                decoding="async"
-                src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/sign.png"
-                alt=""
-              />
-            </Card>
+            <CredentialsCard />
 
             <Card title="Projects" description="SHOWCASE">
               <img
@@ -89,20 +85,7 @@ const Home = () => {
             <MdDeveloperMode className="icon" />
           </div>
         </Card>
-        <Card
-          // className="flex-1"
-          title="Profiles"
-          description="STAY WITH ME"
-        >
-          <div className="flex gap-5 justify-around custom-bg px-4 py-6 shadow-lg">
-            <i className="icon--bg">
-              <CiBasketball className="icon" />
-            </i>
-            <i className="icon--bg">
-              <FiTwitter className="icon" />
-            </i>
-          </div>
-        </Card>
+        <ProfilesCard />
       </div>
 
       <div className="flex gap-5">
@@ -127,17 +110,7 @@ const Home = () => {
           </div>
         </div>
 
-        <Card absolute className="pt-0 flex-1">
-          <img
-            decoding="async"
-            src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon2.png"
-            alt="Star"
-            className="relative bottom-0"
-          />
-          <h2 className="text-[42px] font-medium leading-tight mt-2">
-            Let's <br /> work <span className="text-accent">together.</span>
-          </h2>
-        </Card>
+        <LetsWorkCard />
       </div>
     </section>
   );
