@@ -1,18 +1,15 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import NavLinks from "../components/NavLinks";
+import Logo from "../components/Logo";
 
 const Navbar = () => {
   return (
-    <div className="flex justify-between py-3">
-      <p>GridX</p>
-      <div className="flex gap-12">
-        <Link to="/">Home</Link>
-        <Link to="/about">About</Link>
-        <Link to="/works">Works</Link>
-        <Link to="/contact">Contact</Link>
-      </div>
-      <button>Let's talk</button>
-    </div>
+    <nav className="container mx-auto flex justify-between py-3 items-center">
+      <Logo />
+      <NavLinks className="text-primary " />
+      <button className="bg-[#323232] text-white font-medium px-8 py-3 rounded-2xl hover:bg-white hover:text-black transition duration-200 ease-in-out ">
+        Let's talk
+      </button>
+    </nav>
   );
 };
 
