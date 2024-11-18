@@ -7,10 +7,14 @@ export default {
         sans: ["Inter", "sans-serif"],
       },
       backgroundImage: {
-        "primary-gradient": "linear-gradient(to right, #303030, #151515)",
+        "primary-gradient": "linear-gradient(to right, #202020, #151515)",
       },
       borderRadius: {
         "4xl": "30px",
+      },
+      textColor: {
+        primary: "#bcbcbc",
+        accent: "#5b78f6",
       },
     },
   },
