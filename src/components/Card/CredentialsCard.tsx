@@ -1,4 +1,3 @@
-import React from "react";
 import Card from "../Card";
 
 const CredentialsCard = () => {
@@ -8,6 +7,7 @@ const CredentialsCard = () => {
         decoding="async"
         src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/sign.png"
         alt=""
+        className="w-full max-w-96 mx-auto xl:w-auto xl:mx-0 object-contain"
       />
     </Card>
   );
