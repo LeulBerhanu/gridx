@@ -5,8 +5,8 @@ import CredentialsCard from "../components/Card/CredentialsCard";
 const About = () => {
   return (
     <section className="space-y-4">
-      <div className="flex gap-10 pt-20">
-        <div className="custom-bg p-6 ">
+      <div className="flex flex-col items-center lg:flex-row sm:items-end gap-10 pt-20">
+        <div className="custom-bg p-6 mx-auto">
           <img
             src="https://picsum.photos/300/300"
             alt="image"
@@ -20,20 +20,20 @@ const About = () => {
               decoding="async"
               src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png"
               alt="Star"
-              className="object-contain"
+              className="object-contain size-7 lg:size-auto"
             />
-            <p className="text-white uppercase font-semibold text-7xl">
+            <p className="text-white uppercase font-semibold text-2xl sm:text-3xl lg:text-5xl xl:text-7xl">
               self-summary
             </p>
             <img
               decoding="async"
               src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png"
               alt="Star"
-              className="object-contain"
+              className="object-contain size-7 lg:size-auto"
             />
           </div>
 
-          <div className="custom-bg px-8 pb-9 flex-1">
+          <div className="custom-bg px-8 pb-9 mt-9 lg:mt-0 flex-1">
             <img
               decoding="async"
               src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/icon2.png"
@@ -52,7 +52,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex gap-5">
+      <div className="flex flex-col sm:flex-row gap-5">
         <div className="flex-1 custom-bg p-8 font-medium">
           <p className="uppercase text-white mb-5">experience</p>
 
@@ -78,10 +78,16 @@ const About = () => {
         </div>
       </div>
 
-      <div className="flex gap-5">
-        <ProfilesCard />
-        <LetsWorkCard />
-        <CredentialsCard />
+      <div className="flex gap-5 flex-wrap">
+        <div className="flex-1 xl:flex-none">
+          <ProfilesCard />
+        </div>
+        <div className="flex-1 ">
+          <LetsWorkCard />
+        </div>
+        <div className="w-full xl:w-auto">
+          <CredentialsCard />
+        </div>
       </div>
     </section>
   );
