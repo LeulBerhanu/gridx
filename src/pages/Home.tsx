@@ -80,6 +80,7 @@ const Home = () => {
                   decoding="async"
                   src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/my-works.png"
                   alt=""
+                  className="mx-auto"
                 />
               </Card>
             </div>
@@ -100,6 +101,7 @@ const Home = () => {
               decoding="async"
               src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/gfonts.png"
               alt=""
+              className="mx-auto"
             />
           </Card>
           <Card
