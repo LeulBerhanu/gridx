@@ -51,7 +51,7 @@ const ContactForm: React.FC = () => {
           alt="Star"
         />
       </div>
-      <h2 className="text-[44px] font-medium leading-tight mt-2 ">
+      <h2 className="text-2xl sm:text-[44px] font-medium leading-tight mt-2 ">
         Let's work <span className="text-accent">together.</span>
       </h2>
 
