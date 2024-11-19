@@ -7,7 +7,7 @@ import img5 from "../assets/images/worksPage/5.jpg";
 import img6 from "../assets/images/worksPage/6.jpg";
 
 const imgStyle =
-  "rounded-4xl w-[300px] h-[200px] sm:h-[250px] lg:h-[350px] object-cover ";
+  "rounded-4xl w-full h-[200px] sm:h-[250px] lg:h-[350px] object-cover ";
 
 const Works = () => {
   return (
@@ -54,7 +54,7 @@ const Works = () => {
             className="sm:flex-1"
           >
             <img
-              className={`rounded-4xl w-[300px] h-[200px] sm:h-auto object-cover`}
+              className={`rounded-4xl w-[350px] h-[200px] sm:h-auto object-cover`}
               // className={`${imgStyle} h-full`}
               src={img1}
               alt=""
