@@ -20,7 +20,7 @@ const Home = () => {
           data-aos="zoom-in"
           data-aos-delay="100"
         >
-          <div className="flex flex-col sm:flex-row gap-8 lg:gap-5 xl:gap-8 items-center px-[46px] lg:px-6 xl:px-[46px] py-[50px]">
+          <div className="flex flex-col sm:flex-row gap-8 lg:gap-5 xl:gap-8 items-center px-7 sm:px-[46px] lg:px-6 xl:px-[46px] py-[50px]">
             <img
               className="w-[224px] h-[224px] object-cover rounded-tl-4xl rounded-br-4xl"
               src={laca}
