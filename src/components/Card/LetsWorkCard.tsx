@@ -11,7 +11,7 @@ const LetsWorkCard = () => {
             alt="Star"
           />
         </div>
-        <h2 className="text-[42px] font-medium leading-tight mt-2 ">
+        <h2 className="text-3xl sm:text-[42px] font-medium leading-tight mt-2 ">
           Let's <br /> work <span className="text-accent">together.</span>
         </h2>
       </div>
