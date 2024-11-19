@@ -2,14 +2,20 @@ import NavLinks from "../components/NavLinks";
 import Logo from "../components/Logo";
 import { Link } from "react-router-dom";
 import MenuButtonAnim from "../components/MenuButtonAnimation/MenuButtonAnim";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useLocation } from "react-router-dom";
 
 const Navbar = () => {
+  const location = useLocation();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleNavIcon = () => {
     setIsOpen((prev: boolean) => !prev);
   };
+
+  useEffect(() => {
+    setIsOpen(false);
+  }, [location.pathname]);
 
   return (
     <>
@@ -35,7 +41,7 @@ const Navbar = () => {
           isOpen ? "translate-y-0" : "-translate-y-80"
         } transition duration-500 ease-in-out z-20 pt-8 pb-8`}
       >
-        <NavLinks className="text-primary " />
+        <NavLinks className="text-primary" />
       </div>
     </>
   );
