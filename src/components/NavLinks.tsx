@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 
 interface Props {
@@ -9,7 +8,9 @@ const transition = "hover:text-white transition duration-200 ease-in-out";
 
 const NavLinks = ({ className }: Props) => {
   return (
-    <div className={`flex gap-11 ${className}`}>
+    <div
+      className={`flex flex-col text-center  sm:flex-row sm:text-left gap-6 sm:gap-11 ${className}`}
+    >
       <Link className={transition} to="/">
         Home
       </Link>
