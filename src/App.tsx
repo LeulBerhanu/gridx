@@ -12,7 +12,7 @@ const App = () => {
   useEffect(() => {
     window.scrollTo(0, 0);
 
-    const delay = 500; // 1 second delay
+    const delay = 500; // .5 second delay
     const timerId = setTimeout(() => {
       AOS.init({
         duration: 700,
