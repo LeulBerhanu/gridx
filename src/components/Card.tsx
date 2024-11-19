@@ -20,7 +20,9 @@ const Card = ({
 }: Props) => {
   return (
     <div
-      className={`flex flex-col custom-bg py-6 px-6 text-white relative ${className} group cursor-pointer`}
+      className={`${
+        worksCard ? "p-4  " : "py-6 px-6"
+      }  flex flex-col custom-bg  text-white relative ${className} group cursor-pointer`}
     >
       <div className="flex-1">{children}</div>
       <div className={`flex justify-between items-end ${!absolute && "mt-4"}`}>
