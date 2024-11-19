@@ -5,7 +5,12 @@ import { Link } from "react-router-dom";
 
 const ProfilesCard = () => {
   return (
-    <Card title="Profiles" description="STAY WITH ME">
+    <Card
+      data-aos="zoom-in"
+      data-aos-delay="150"
+      title="Profiles"
+      description="STAY WITH ME"
+    >
       <div className="flex gap-5 justify-around custom-bg px-4 py-6 shadow-lg">
         <Link
           to="#"

@@ -2,7 +2,12 @@ import Card from "../Card";
 
 const LetsWorkCard = () => {
   return (
-    <Card absolute className="pt-0 flex-1 h-full">
+    <Card
+      data-aos="zoom-in"
+      data-aos-delay="200"
+      absolute
+      className="pt-0 flex-1 h-full"
+    >
       <div className="flex h-full flex-col justify-between">
         <div>
           <img

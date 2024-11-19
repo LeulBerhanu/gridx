@@ -7,19 +7,26 @@ import { Link } from "react-router-dom";
 import ProfilesCard from "../components/Card/ProfilesCard";
 import CredentialsCard from "../components/Card/CredentialsCard";
 import LetsWorkCard from "../components/Card/LetsWorkCard";
+import Marquee from "react-fast-marquee";
+import laca from "../assets/images/laca.jpg";
 
 const Home = () => {
   return (
     <section className="space-y-6 pt-20">
-      <div className="flex flex-col lg:flex-row gap-6 ">
+      <div className="flex flex-col lg:flex-row gap-6">
         {/* profile card */}
-        <div className="custom-bg relative flex-1 group cursor-pointer">
-          <div className="flex flex-col sm:flex-row gap-8 items-center px-[46px] py-[50px]">
+        <div
+          className="custom-bg relative flex-1 group cursor-pointer"
+          data-aos="zoom-in"
+          data-aos-delay="100"
+        >
+          <div className="flex flex-col sm:flex-row gap-8 lg:gap-5 xl:gap-8 items-center px-[46px] lg:px-6 xl:px-[46px] py-[50px]">
             <img
-              className="rounded-tl-4xl rounded-br-4xl"
-              src="https://picsum.photos/224/224"
-              alt=""
+              className="w-[224px] h-[224px] object-cover rounded-tl-4xl rounded-br-4xl"
+              src={laca}
+              alt="profile"
             />
+
             <div className="text-white w-full sm:w-auto">
               <h5 className="text-sm font-medium text-primary">
                 A WEB DESIGNER
@@ -45,16 +52,30 @@ const Home = () => {
         </div>
 
         <div className="flex-1 flex flex-col gap-5">
-          <div className="custom-bg text-primary px-5 py-5">
-            <p className="text-xs">LATEST WORK AND FEATURED *</p>
+          <div
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            className="custom-bg text-primary px-5 py-5"
+          >
+            <Marquee speed={80}>
+              <p className="text-xs mr-2">
+                LATEST WORK AND <span className="text-white">FEATURED </span>*
+              </p>
+              <p className="text-xs mr-2">
+                LATEST WORK AND <span className="text-white">FEATURED </span>*
+              </p>
+              <p className="text-xs mr-2">
+                LATEST WORK AND <span className="text-white">FEATURED </span>*
+              </p>
+            </Marquee>
           </div>
           <div className="flex-1 flex flex-col sm:flex-row gap-5 ">
             <div className="flex-1">
               <CredentialsCard />
             </div>
 
-            <div className="flex-1">
-              <Card title="Projects" description="SHOWCASE">
+            <div data-aos="zoom-in" data-aos-delay="150" className="flex-1">
+              <Card title="Projects" description="SHOWCASE" className="h-full">
                 <img
                   decoding="async"
                   src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/my-works.png"
@@ -69,6 +90,8 @@ const Home = () => {
       <div className="flex flex-col lg:flex-row flex-wrap gap-5">
         <div className="flex flex-col sm:flex-row flex-1 gap-5">
           <Card
+            data-aos="zoom-in"
+            data-aos-delay="150"
             className="flex-1 lg:flex-none"
             title="GFonts"
             description="BLOG"
@@ -80,6 +103,8 @@ const Home = () => {
             />
           </Card>
           <Card
+            data-aos="zoom-in"
+            data-aos-delay="200"
             className="flex-1"
             title="Services Offering"
             description="SPECIALIZATION"
@@ -92,11 +117,17 @@ const Home = () => {
             </div>
           </Card>
         </div>
-        <ProfilesCard />
+        <div data-aos="zoom-in" data-aos-delay="250">
+          <ProfilesCard />
+        </div>
       </div>
 
       <div className="flex flex-col lg:flex-row gap-5">
-        <div className="flex flex-col sm:flex-row flex-1 justify-around p-6 custom-bg text-center gap-6">
+        <div
+          data-aos="zoom-in"
+          data-aos-delay="150"
+          className="flex flex-col sm:flex-row flex-1 justify-around p-6 custom-bg text-center gap-6"
+        >
           <div className="px-8 py-11 w-full  rounded-4xl bg-primary-gradient text-white space-y-5 shadow-custom">
             <p className="text-3xl font-medium mb-">07</p>
             <p className="text-xs uppercase text-primary">

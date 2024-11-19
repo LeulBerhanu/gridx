@@ -16,7 +16,7 @@ const Contact = () => {
           <div>
             <h2 className="uppercase font-medium mb-7">Contact info</h2>
             <div className="flex flex-col sm:gap-20 gap-10">
-              <div className="flex gap-3 sm:gap-6">
+              <div data-aos="zoom-in" className="flex gap-3 sm:gap-6">
                 <div className="bg-primary-gradient px-6 py-5 rounded-xl scale-75 sm:scale-100">
                   <MdOutlineEmail className="icon" />
                 </div>
@@ -26,7 +26,11 @@ const Contact = () => {
                   <p className="font-medium opacity-80">info@lacazetteA.com</p>
                 </div>
               </div>
-              <div className="flex gap-3 sm:gap-6">
+              <div
+                data-aos="zoom-in"
+                data-aos-delay="100"
+                className="flex gap-3 sm:gap-6"
+              >
                 <div className="bg-primary-gradient px-6 py-5 rounded-xl scale-75 sm:scale-100">
                   <FiPhone className="icon" />
                 </div>
@@ -38,7 +42,11 @@ const Contact = () => {
                   <p className="font-medium opacity-80">+1 504-123-9876</p>
                 </div>
               </div>
-              <div className="flex gap-3 sm:gap-6 items-center">
+              <div
+                data-aos="zoom-in"
+                data-aos-delay="200"
+                className="flex gap-3 sm:gap-6 items-center"
+              >
                 <div className="bg-primary-gradient px-6 py-5 rounded-xl scale-75 sm:scale-100">
                   <GrLocation className="icon" />
                 </div>
@@ -63,18 +71,23 @@ const Contact = () => {
               <Link
                 to="#"
                 className="gradient-transition hover:text-black transition-all duration-200"
+                data-aos="zoom-in"
               >
                 <CiBasketball className="size-14 p-4 sm:size-20 sm:p-6" />
               </Link>
               <Link
                 to="#"
                 className="gradient-transition hover:text-black transition-all duration-200"
+                data-aos="zoom-in"
+                data-aos-delay="100"
               >
                 <FiTwitter className="size-14 p-4 sm:size-20 sm:p-6" />
               </Link>
               <Link
                 to="#"
                 className="gradient-transition hover:text-black transition-all duration-200"
+                data-aos="zoom-in"
+                data-aos-delay="200"
               >
                 <BsInstagram className="size-14 p-4 sm:size-20 sm:p-6" />
               </Link>
@@ -82,7 +95,7 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className="flex-1">
+        <div className="flex-1" data-aos="fade-in">
           <ContactForm />
         </div>
       </div>
