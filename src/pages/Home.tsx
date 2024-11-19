@@ -11,15 +11,16 @@ import LetsWorkCard from "../components/Card/LetsWorkCard";
 const Home = () => {
   return (
     <section className="space-y-6 pt-20">
-      <div className="flex gap-6 ">
+      <div className="flex flex-col lg:flex-row gap-6 ">
+        {/* profile card */}
         <div className="custom-bg relative flex-1 group cursor-pointer">
-          <div className="flex gap-8 items-center px-[46px] py-[50px]">
+          <div className="flex flex-col sm:flex-row gap-8 items-center px-[46px] py-[50px]">
             <img
               className="rounded-tl-4xl rounded-br-4xl"
               src="https://picsum.photos/224/224"
               alt=""
             />
-            <div className="text-white">
+            <div className="text-white w-full sm:w-auto">
               <h5 className="text-sm font-medium text-primary">
                 A WEB DESIGNER
               </h5>
@@ -47,62 +48,68 @@ const Home = () => {
           <div className="custom-bg text-primary px-5 py-5">
             <p className="text-xs">LATEST WORK AND FEATURED *</p>
           </div>
-          <div className="flex-1 flex gap-5 ">
-            <CredentialsCard />
+          <div className="flex-1 flex flex-col sm:flex-row gap-5 ">
+            <div className="flex-1">
+              <CredentialsCard />
+            </div>
 
-            <Card title="Projects" description="SHOWCASE">
-              <img
-                decoding="async"
-                src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/my-works.png"
-                alt=""
-              />
-            </Card>
+            <div className="flex-1">
+              <Card title="Projects" description="SHOWCASE">
+                <img
+                  decoding="async"
+                  src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/my-works.png"
+                  alt=""
+                />
+              </Card>
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="flex space-x-5">
-        <Card
-          // className="flex-1"
-          title="GFonts"
-          description="BLOG"
-        >
-          <img
-            decoding="async"
-            src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/gfonts.png"
-            alt=""
-          />
-        </Card>
-        <Card
-          className="flex-1"
-          title="Services Offering"
-          description="SPECIALIZATION"
-        >
-          <div className="flex h-full justify-around items-center">
-            <FiCamera className="icon" />
-            <PiPencilCircle className="icon" />
-            <IoIosColorFilter className="icon" />
-            <MdDeveloperMode className="icon" />
-          </div>
-        </Card>
+      <div className="flex flex-col lg:flex-row flex-wrap gap-5">
+        <div className="flex flex-col sm:flex-row flex-1 gap-5">
+          <Card
+            className="flex-1 lg:flex-none"
+            title="GFonts"
+            description="BLOG"
+          >
+            <img
+              decoding="async"
+              src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/gfonts.png"
+              alt=""
+            />
+          </Card>
+          <Card
+            className="flex-1"
+            title="Services Offering"
+            description="SPECIALIZATION"
+          >
+            <div className="flex  h-full justify-around items-center">
+              <FiCamera className="icon" />
+              <PiPencilCircle className="icon" />
+              <IoIosColorFilter className="icon" />
+              <MdDeveloperMode className="icon" />
+            </div>
+          </Card>
+        </div>
         <ProfilesCard />
       </div>
 
-      <div className="flex gap-5">
-        <div className="flex flex-1 justify-around p-6 custom-bg text-center gap-6">
-          <div className="px-8 py-11  custom-bg text-white space-y-5 ">
+      <div className="flex flex-col lg:flex-row gap-5">
+        <div className="flex flex-col sm:flex-row flex-1 justify-around p-6 custom-bg text-center gap-6">
+          <div className="px-8 py-11 w-full  rounded-4xl bg-primary-gradient text-white space-y-5 shadow-custom">
             <p className="text-3xl font-medium mb-">07</p>
             <p className="text-xs uppercase text-primary">
               Years <br /> Experience
             </p>
           </div>
-          <div className="px-8 py-11  custom-bg text-white space-y-5">
+          <div className="px-8 py-11 w-full rounded-4xl bg-primary-gradient text-white space-y-5 shadow-custom">
             <p className="text-3xl font-medium mb-">+125</p>
             <p className="text-xs uppercase text-primary">
               clients <br /> worldwide
             </p>
           </div>
-          <div className="px-8 py-11  custom-bg text-white space-y-5">
+          <div className="px-8 py-11 w-full rounded-4xl bg-primary-gradient text-white space-y-5 shadow-custom">
             <p className="text-3xl font-medium mb-">+210</p>
             <p className="text-xs uppercase text-primary">
               total <br /> projects
