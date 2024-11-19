@@ -66,7 +66,7 @@ const About = () => {
         </div>
 
         <div className="flex-1 custom-bg p-8 font-medium">
-          <p className="uppercase text-white mb-5">eduction</p>
+          <p className="uppercase text-white mb-5">education</p>
 
           <p className="text-primary text-sm mb-2">2004 - 2007</p>
           <p className="text-white mb-1">Bachelor Degree in Psychology</p>
