@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 interface Props {
   className?: string;
@@ -7,6 +7,11 @@ interface Props {
 
 const transition = "hover:text-white transition duration-200 ease-in-out";
 
+const navLinkStyle = ({ isActive }: { isActive: boolean }) => ({
+  color: isActive ? "white" : "",
+  fontWeight: isActive ? 500 : "",
+});
+
 const NavLinks = ({ className, footer }: Props) => {
   return (
     <div
@@ -14,18 +19,18 @@ const NavLinks = ({ className, footer }: Props) => {
         footer ? "flex" : "flex flex-col sm:flex-row"
       } text-center sm:text-left gap-6 sm:gap-11 ${className}`}
     >
-      <Link className={transition} to="/">
+      <NavLink style={navLinkStyle} className={transition} to="/">
         Home
-      </Link>
-      <Link className={transition} to="/about">
+      </NavLink>
+      <NavLink style={navLinkStyle} className={transition} to="/about">
         About
-      </Link>
-      <Link className={transition} to="/works">
+      </NavLink>
+      <NavLink style={navLinkStyle} className={transition} to="/works">
         Works
-      </Link>
-      <Link className={transition} to="/contact">
+      </NavLink>
+      <NavLink style={navLinkStyle} className={transition} to="/contact">
         Contact
-      </Link>
+      </NavLink>
     </div>
   );
 };
