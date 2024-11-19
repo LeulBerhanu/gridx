@@ -17,12 +17,14 @@ const Card = ({
   absolute,
   worksCard,
   className,
+  ...props
 }: Props) => {
   return (
     <div
+      {...props}
       className={`${
-        worksCard ? "p-4  " : "py-6 px-6"
-      }  flex flex-col custom-bg  text-white relative ${className} group cursor-pointer`}
+        worksCard ? "p-4" : "py-6 px-6"
+      } flex flex-col custom-bg  text-white relative ${className} group cursor-pointer`}
     >
       <div className="flex-1">{children}</div>
       <div className={`flex justify-between items-end ${!absolute && "mt-4"}`}>
