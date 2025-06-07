@@ -14,7 +14,7 @@ const imgStyle =
 const Works = () => {
   return (
     <section>
-      <div className="flex flex-col  sm:flex-row gap-5 pt-20 justify-center">
+      <div className="lg:hidden flex flex-col  sm:flex-row gap-5 pt-20 justify-center ">
         {/* section title for mobile */}
         <div
           data-aos="fade-in"
@@ -163,6 +163,124 @@ const Works = () => {
             </Card>
           </div>
         </div>
+      </div>
+
+      {/* large screen */}
+      {/* section title */}
+      <div
+        data-aos="fade-in"
+        className="hidden lg:flex gap-1 items-center justify-center mt-16"
+      >
+        <img
+          decoding="async"
+          src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png"
+          alt="Star"
+          className="object-contain size-7 lg:size-auto"
+        />
+        <p className="text-white uppercase font-semibold lg:text-5xl xl:text-6xl">
+          My projects
+        </p>
+        <img
+          decoding="async"
+          src="https://wpriverthemes.com/gridx/wp-content/themes/gridx/assets/images/star-2.png"
+          alt="Star"
+          className="object-contain size-7 lg:size-auto"
+        />
+      </div>
+      <div className="hidden lg:grid grid-cols-3 flex-col  sm:flex-row gap-5 pt-20 justify-center ">
+        <Card
+          data-aos="zoom-in"
+          data-aos-delay="100"
+          title="Talent Spot Portal"
+          description="Frontend Development"
+          link="https://mmcy-talent-spot-portal-client.vercel.app/"
+          worksCard
+        >
+          <img className={`${imgStyle} `} decoding="async" src={mmcy} alt="" />
+        </Card>
+        <Card
+          data-aos="zoom-in"
+          data-aos-delay="150"
+          title="Urbned Landing Page"
+          description="Frontend Development"
+          link="https://urbned.com/"
+          worksCard
+          // className="sm:flex-1"
+        >
+          <img
+            // className={`rounded-4xl w-[350px] h-[200px] sm:h-auto object-cover`}
+            // className={`${imgStyle} h-full`}
+            className={imgStyle}
+            src={urbnedss}
+            alt=""
+          />
+        </Card>
+
+        <Card
+          data-aos="zoom-in"
+          data-aos-delay="200"
+          title="Finden"
+          description="Frontend Development"
+          link="https://finden-fontend-next.vercel.app/"
+          worksCard
+        >
+          <img className={imgStyle} src={explorer} alt="" />
+        </Card>
+        <Card
+          data-aos="zoom-in"
+          data-aos-delay="300"
+          title="Flikia Delivery"
+          description="Fullstack Development"
+          link="https://znbildelivery.bekurtechsolution.com/"
+          worksCard
+        >
+          <img className={imgStyle} src={bekur} alt="" />
+        </Card>
+        <Card
+          data-aos="zoom-in"
+          data-aos-delay="400"
+          title="Blackrock Solution PLC"
+          description="Backend Development"
+          link="https://www.blackrocksolutionsplc.com/"
+          worksCard
+        >
+          <img className={imgStyle} src={blackrock} alt="" />
+        </Card>
+        <Card
+          data-aos="zoom-in"
+          data-aos-delay="500"
+          title="Malda Nutritional Hub"
+          description="Fullstack Development"
+          link="https://malda-hub.vercel.app/"
+          worksCard
+        >
+          <img className={imgStyle} src={maldaa} alt="" />
+        </Card>
+        <Card
+          data-aos="zoom-in"
+          data-aos-delay="500"
+          title="JEMS JTC CPAs Enterprise"
+          description="Backend Development"
+          link="#"
+          nolink
+          worksCard
+        >
+          <img
+            className={`${imgStyle} group-hover:scale-100`}
+            src={cpa}
+            alt=""
+          />
+        </Card>
+        <Card
+          data-aos="zoom-in"
+          data-aos-delay="500"
+          title="Lucy"
+          description="Backend Development"
+          link="https://lucy.com/"
+          worksCard
+        >
+          <img className={imgStyle} src={lucy} alt="" />
+        </Card>
       </div>
     </section>
   );
