@@ -19,9 +19,9 @@ const NavLinks = ({ className, footer }: Props) => {
         footer ? "flex" : "flex flex-col sm:flex-row"
       } text-center sm:text-left gap-6 sm:gap-11 ${className}`}
     >
-      <NavLink style={navLinkStyle} className={transition} to="/">
+      {/* <NavLink style={navLinkStyle} className={transition} to="/">
         Home
-      </NavLink>
+      </NavLink> */}
       <NavLink style={navLinkStyle} className={transition} to="/about">
         About
       </NavLink>
