@@ -1,18 +1,20 @@
 import Card from "../components/Card";
-import img1 from "../assets/images/worksPage/1.jpg";
-import img2 from "../assets/images/worksPage/2.jpg";
-import img3 from "../assets/images/worksPage/3.jpg";
-import img4 from "../assets/images/worksPage/4.jpg";
-import img5 from "../assets/images/worksPage/5.jpg";
-import img6 from "../assets/images/worksPage/6.jpg";
+import mmcy from "../assets/images/mmcy.webp";
+import urbnedss from "../assets/images/urbnedss.webp";
+import explorer from "../assets/images/explorer.webp";
+import bekur from "../assets/images/bekur.webp";
+import blackrock from "../assets/images/blackrock.webp";
+import maldaa from "../assets/images/malda.webp";
+import cpa from "../assets/images/cpa.jpg";
+import lucy from "../assets/images/lucy.png";
 
 const imgStyle =
-  "rounded-4xl w-full h-[200px] sm:h-[250px] lg:h-[350px] object-cover ";
+  "rounded-4xl filter grayscale group-hover:grayscale-0 w-full h-[200px] sm:h-[250px] lg:h-[350px] object-cover group-hover:scale-125 transition duration-700 ease-in-out";
 
 const Works = () => {
   return (
     <section>
-      <div className="flex flex-col sm:flex-row gap-5 pt-20 justify-center">
+      <div className="flex flex-col  sm:flex-row gap-5 pt-20 justify-center">
         {/* section title for mobile */}
         <div
           data-aos="fade-in"
@@ -35,28 +37,36 @@ const Works = () => {
           />
         </div>
 
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 ">
           <Card
             data-aos="zoom-in"
             data-aos-delay="100"
-            title="Dynamic"
-            description="WEB DESIGNING"
+            title="Talent Spot Portal"
+            description="Frontend Development"
+            link="https://mmcy-talent-spot-portal-client.vercel.app/"
             worksCard
           >
-            <img className={imgStyle} decoding="async" src={img2} alt="" />
+            <img
+              className={`${imgStyle} `}
+              decoding="async"
+              src={mmcy}
+              alt=""
+            />
           </Card>
           <Card
             data-aos="zoom-in"
             data-aos-delay="150"
-            title="Diesel H1"
-            description="PHOTOGRAPHY"
+            title="Urbned Landing Page"
+            description="Frontend Development"
+            link="https://urbned.com/"
             worksCard
-            className="sm:flex-1"
+            // className="sm:flex-1"
           >
             <img
-              className={`rounded-4xl w-[350px] h-[200px] sm:h-auto object-cover`}
+              // className={`rounded-4xl w-[350px] h-[200px] sm:h-auto object-cover`}
               // className={`${imgStyle} h-full`}
-              src={img1}
+              className={imgStyle}
+              src={urbnedss}
               alt=""
             />
           </Card>
@@ -66,7 +76,7 @@ const Works = () => {
           {/* section title */}
           <div
             data-aos="fade-in"
-            className="hidden sm:flex gap-1 items-center justify-center mb-4 "
+            className="hidden sm:flex gap-1 items-center justify-center mb-4"
           >
             <img
               decoding="async"
@@ -89,38 +99,67 @@ const Works = () => {
             <Card
               data-aos="zoom-in"
               data-aos-delay="200"
-              title="Seven Studio"
-              description="MOBILE DESIGNING"
+              title="Finden"
+              description="Frontend Development"
+              link="https://finden-fontend-next.vercel.app/"
               worksCard
             >
-              <img className={imgStyle} src={img3} alt="" />
+              <img className={imgStyle} src={explorer} alt="" />
             </Card>
             <Card
               data-aos="zoom-in"
               data-aos-delay="300"
-              title="Raven Studio"
-              description="BRANDING"
+              title="Flikia Delivery"
+              description="Fullstack Development"
+              link="https://znbildelivery.bekurtechsolution.com/"
               worksCard
             >
-              <img className={imgStyle} src={img4} alt="" />
+              <img className={imgStyle} src={bekur} alt="" />
             </Card>
             <Card
               data-aos="zoom-in"
               data-aos-delay="400"
-              title="Submarine"
-              description="MOBILE DESIGNING"
+              title="Blackrock Solution PLC"
+              description="Backend Development"
+              link="https://znbildelivery.bekurtechsolution.com/"
               worksCard
             >
-              <img className={imgStyle} src={img5} alt="" />
+              <img className={imgStyle} src={blackrock} alt="" />
             </Card>
             <Card
               data-aos="zoom-in"
               data-aos-delay="500"
-              title="Hydra Merc"
-              description="WEB DESIGNING"
+              title="Malda Nutritional Hub"
+              description="Fullstack Development"
+              link="https://malda-hub.vercel.app/"
               worksCard
             >
-              <img className={imgStyle} src={img6} alt="" />
+              <img className={imgStyle} src={maldaa} alt="" />
+            </Card>
+            <Card
+              data-aos="zoom-in"
+              data-aos-delay="500"
+              title="JEMS JTC CPAs Enterprise"
+              description="Backend Development"
+              link="#"
+              nolink
+              worksCard
+            >
+              <img
+                className={`${imgStyle} group-hover:scale-100`}
+                src={cpa}
+                alt=""
+              />
+            </Card>
+            <Card
+              data-aos="zoom-in"
+              data-aos-delay="500"
+              title="Lucy"
+              description="Backend Development"
+              link="https://lucy.com/"
+              worksCard
+            >
+              <img className={imgStyle} src={lucy} alt="" />
             </Card>
           </div>
         </div>
