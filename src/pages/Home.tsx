@@ -121,6 +121,9 @@ const Home = () => {
             <div className="flex-1">
               <CredentialsCard />
             </div>
+            <div className="flex-1">
+              <ProfilesCard />
+            </div>
           </div>
         </div>
       </div>
