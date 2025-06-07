@@ -1,6 +1,6 @@
 import Card from "../Card";
 import { Link } from "react-router-dom";
-import { FaLinkedin, FaTelegramPlane, FaWhatsapp } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 import { BsGithub } from "react-icons/bs";
 
 const ProfilesCard = () => {

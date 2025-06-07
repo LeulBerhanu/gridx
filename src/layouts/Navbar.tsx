@@ -1,5 +1,4 @@
 import NavLinks from "../components/NavLinks";
-import Logo from "../components/Logo";
 import { Link, NavLink } from "react-router-dom";
 import MenuButtonAnim from "../components/MenuButtonAnimation/MenuButtonAnim";
 import { useEffect, useState } from "react";
