@@ -32,14 +32,22 @@ const ContactForm: React.FC = () => {
     reset,
   } = useForm({ resolver: zodResolver(MessageSchema) });
 
-  console.log("errors: ", errors);
-
   const onSubmit = async (data: FieldValues) => {
-    console.log(data);
+    const response = await fetch("https://formspree.io/f/mgvyojkw", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify(data),
+    });
 
-    await new Promise((resolve) => setTimeout(resolve, 1000));
-
-    reset();
+    if (response.ok) {
+      alert("Message sent!");
+      reset();
+    } else {
+      alert("Something went wrong. Please try again.");
+    }
   };
 
   return (
