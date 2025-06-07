@@ -6,7 +6,7 @@ const LetsWorkCard = () => {
       data-aos="zoom-in"
       data-aos-delay="200"
       absolute
-      className="pt-0 flex-1 h-full"
+      className="pt-0 flex-1 "
     >
       <div className="flex h-full flex-col justify-between">
         <div>

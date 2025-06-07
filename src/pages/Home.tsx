@@ -121,23 +121,6 @@ const Home = () => {
             <div className="flex-1">
               <CredentialsCard />
             </div>
-
-            <div data-aos="zoom-in" data-aos-delay="150" className="flex-1">
-              <Card
-                title="Projects"
-                description="SHOWCASE"
-                className="h-full"
-                link="/works"
-                noNewTab
-              >
-                <img
-                  decoding="async"
-                  src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/my-works.png"
-                  alt=""
-                  className="mx-auto"
-                />
-              </Card>
-            </div>
           </div>
         </div>
       </div>
@@ -197,12 +180,26 @@ const Home = () => {
             </div>
           </Card>
         </div>
-        <div data-aos="zoom-in" data-aos-delay="250">
-          <ProfilesCard />
-        </div>
       </div>
 
       <div className="flex flex-col lg:flex-row gap-5">
+        <div data-aos="zoom-in" data-aos-delay="150" className="flex-1">
+          <Card
+            title="Projects"
+            description="SHOWCASE"
+            className="h-full"
+            link="/works"
+            noNewTab
+          >
+            <img
+              decoding="async"
+              src="https://wpriverthemes.com/gridx/wp-content/uploads/2023/04/my-works.png"
+              alt=""
+              className="mx-auto"
+            />
+          </Card>
+        </div>
+
         <div
           data-aos="zoom-in"
           data-aos-delay="150"
@@ -229,6 +226,7 @@ const Home = () => {
         </div>
 
         <LetsWorkCard />
+        {/* <div></div> */}
       </div>
     </section>
   );
