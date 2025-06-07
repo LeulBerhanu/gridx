@@ -1,7 +1,6 @@
 import ProfilesCard from "../components/Card/ProfilesCard";
 import LetsWorkCard from "../components/Card/LetsWorkCard";
-import CredentialsCard from "../components/Card/CredentialsCard";
-import laca from "../assets/images/laca.jpg";
+import leul from "../assets/images/leul.png";
 
 const About = () => {
   return (
@@ -12,7 +11,14 @@ const About = () => {
           data-aos-delay="100"
           className="custom-bg p-6 mx-auto"
         >
-          <img src={laca} alt="profile" className="rounded-4xl max-w-[300px]" />
+          {/* <img src={laca} alt="profile" className="rounded-4xl max-w-[300px]" /> */}
+          <div className="bg-slate-200 rounded-4xl overflow-hidden">
+            <img
+              className=" w-[300px] h-[250px] flex-1  relative -rotate-3 top-3  object-cover "
+              src={leul}
+              alt="profile"
+            />
+          </div>
         </div>
 
         <div className="flex flex-col gap-2 flex-1">
@@ -49,13 +55,13 @@ const About = () => {
               alt="Star"
               className="mb-8"
             />
-            <p className="text-4xl font-medium text-white">
-              Alexandre Lacazette
-            </p>
-            <p className="text-primary font-medium mt-2">
-              I am a Lyon-based product designer with a focus on web design,
-              illustration, a visual development. I have a diverse range of
-              experience having worked across various fields and industries.
+            <p className="text-4xl font-medium text-white">Leul Berhanu</p>
+            <p className="text-primary font-medium mt-2 text-justify">
+              I’m an Addis Ababa based full-stack web developer with a focus on
+              creating efficient, user-centric web applications. I’ve gained
+              experience working across different areas of the development
+              stack, from building responsive frontends to designing and
+              maintaining backend systems.
             </p>
           </div>
         </div>
@@ -69,13 +75,17 @@ const About = () => {
         >
           <p className="uppercase text-white mb-5">experience</p>
 
-          <p className="text-primary text-sm mb-2">2007 - 2017</p>
-          <p className="text-white mb-1">Framer Designer & Developer</p>
-          <p className="text-primary text-sm mb-8">Bluebase Designs</p>
+          <p className="text-primary text-sm mb-2">2024</p>
+          <p className="text-white mb-1">Full Stack Development</p>
+          <p className="text-primary text-sm mb-8">
+            MMCY Tech <span className="opacity-40">{" - "} Intern</span>
+          </p>
 
-          <p className="text-primary text-sm mb-2">2017 - 2023</p>
-          <p className="text-white mb-1">Front-End Developer</p>
-          <p className="text-primary text-sm">Larsen & Toubro</p>
+          <p className="text-primary text-sm mb-2">2023 - </p>
+          <p className="text-white mb-1">Full Stack Development</p>
+          <p className="text-primary text-sm">
+            Freelance <span className="opacity-40">{" - "} Upwork</span>
+          </p>
         </div>
 
         <div
@@ -85,13 +95,17 @@ const About = () => {
         >
           <p className="uppercase text-white mb-5">education</p>
 
-          <p className="text-primary text-sm mb-2">2004 - 2007</p>
-          <p className="text-white mb-1">Bachelor Degree in Psychology</p>
-          <p className="text-primary text-sm mb-8">University of California</p>
+          <p className="text-primary text-sm mb-2">2021 - 2022</p>
+          <p className="text-white mb-1">Freshman</p>
+          <p className="text-primary text-sm mb-8">
+            Addis Ababa Science and Technology University
+          </p>
 
-          <p className="text-primary text-sm mb-2">2007 - 2009</p>
-          <p className="text-white mb-1">Master Degree in Designing</p>
-          <p className="text-primary text-sm">University of Texas</p>
+          <p className="text-primary text-sm mb-2">2022 - 2025</p>
+          <p className="text-white mb-1">
+            Bachelor's Degree in Computer Science
+          </p>
+          <p className="text-primary text-sm">Microlink IT College</p>
         </div>
       </div>
 
@@ -102,9 +116,9 @@ const About = () => {
         <div className="flex-1 ">
           <LetsWorkCard />
         </div>
-        <div className="w-full xl:w-auto">
+        {/* <div className="w-full xl:w-auto">
           <CredentialsCard />
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -8,6 +8,8 @@ const CredentialsCard = () => {
       title="Credentials"
       description="MORE ABOUT ME"
       className="h-full"
+      link="/about"
+      noNewTab
     >
       <img
         decoding="async"
